@@ -239,7 +239,7 @@ nav ul li a:hover{
 
 /* TRANSFROMACION DE BOTON */
 .btn-hambur.press{
-    color: white;
+    color: red;
     font-family: "Tiza";
     font-size: 1.3rem;
     background-color: transparent;
