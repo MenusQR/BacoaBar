@@ -26,7 +26,10 @@
     font-family: 'Tiza';
     src: url(../font/tiza.ttf) format('truetype');
 }
-
+@font-face {
+    font-family: 'Tiza2';
+    src: url(../font/HackneyPersonalUseOnly.ttf) format('truetype');
+}
 body{
     background-color: #000000;
     scroll-behavior: smooth;
@@ -87,35 +90,18 @@ body{
 
 .sidebar .text{
     color: rgb(0, 0, 0);
-    font-size: 19px;
-    line-height: 20px;
-    font-family: "Tiza";
+    font-family: "Tiza2";
+    font-size: 2rem;
+    line-height: 80%;
+    padding: 0 0 4px 0;
     text-align: center;
-    background: #1faefc;
-    letter-spacing: 1px;
-    padding: 2px 0 5.5px 0;
     margin: 5px 15px 0 15px;
     border-bottom: 3px solid;
     border-top: 3px solid;
     border-top-color: #000000;
 }
-
-.side-titulos{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    line-height: 15px;
-    font-size: 18px;
-    font-family: "Tiza";
-    text-align: center;
-    padding: 5px 0 8px 0;
-    margin: 0 20px 0 20px;
-    border-bottom: 2px solid;
-    border-top: 2px solid;
-    border-top-color: #fa0000;
-}
     
 nav ul{
-    background: #1faefc;
     margin-top: 7px;
     margin-bottom: 10px;
     width: 100%;
@@ -124,7 +110,6 @@ nav ul{
 
 nav ul li{
     position: relative;
-    line-height: 20px;
 }
 
 nav ul li a{
@@ -186,7 +171,7 @@ nav ul li a:hover{
 
 .img-titulo{
     margin-top: 2px;
-    height: 45px;
+    height: 3.5rem;
 }
 
 .bar{
@@ -224,8 +209,6 @@ nav ul li a:hover{
     margin-top: 15px;
     background-color: #1faefc;
     text-align: center;
-    font-family: "Tiza";
-    font-size: 1.4rem;
     color: black;
     border-radius: 5px;
     padding: 0%;
@@ -239,19 +222,19 @@ nav ul li a:hover{
 
 /* TRANSFROMACION DE BOTON */
 .btn-hambur.press{
-    color: rgb(22, 99, 143);
-    font-family: "Tiza";
-    font-size: 1.3rem;
+    color: white;
     background-color: transparent;
     box-shadow: none;
-    padding: 3px 0 0 0;
     border-radius: 0%;
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
 
 .titulo-hambur{
-    padding: 0%;
+    font-family: "Tiza2";
+    font-size: 3.5rem;
+    line-height: 80%;
+    padding: 0 0 7px 0;
     margin: 0%;
 
 }
@@ -293,7 +276,7 @@ nav ul li a:hover{
 }
 
 .linea-flotante.move{
-    transform: translate(0px,454px);
+    transform: translate(0px,23200%);
 }
 
 /* HAMBURGUESAS MENU */
@@ -306,7 +289,9 @@ nav ul li a:hover{
     margin-bottom: 10px;
 }
 .nombres-hambur{
-    font-family: "Tiza";
+    font-family: "Tiza2";
+    font-size: 1.7rem;
+    line-height: 80%;
 }
 .contenido-hambur{
     margin: 0%;
@@ -327,8 +312,8 @@ nav ul li a:hover{
     margin-top: 15px;
     background-color: #1faefc;
     text-align: center;
-    font-family: "Montserrat Bold";
-    font-size: 1.7rem;
+    font-family: "Tiza";
+    font-size: 1.4rem;
     color: black;
     border-radius: 5px;
     padding: 0%;
