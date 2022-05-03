@@ -154,6 +154,7 @@ nav ul li a:hover{
 /* CONTENIDO UNO PARA ESCONDER TEXTO */
 .contenido1{
     position: relative;
+    background-color: black;
     z-index: 50;
 }
 
