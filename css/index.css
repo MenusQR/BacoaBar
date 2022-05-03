@@ -276,7 +276,8 @@ nav ul li a:hover{
 }
 
 .linea-flotante.move{
-    transform: translate(0px,23200%);
+    transform: translateY(28.87rem);
+    top: auto;
 }
 
 /* HAMBURGUESAS MENU */
