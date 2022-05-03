@@ -266,18 +266,17 @@ nav ul li a:hover{
 /* LINEA FLOTANTE */
 .linea-flotante{
     position: absolute;
-    top: -2px;
     height: 2px;
     width: 85%;
     margin: 0 7.5% 0 7.5%;
     background-color: white;
+    bottom: 410px;
     transition: 1s linear;
     transition-delay: 1s;
 }
 
 .linea-flotante.move{
-    transform: translateY(28.87rem);
-    top: auto;
+    bottom: 10px;
 }
 
 /* HAMBURGUESAS MENU */
