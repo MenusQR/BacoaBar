@@ -90,32 +90,90 @@
               <p class="contenido-hambur">Lorem ipsum dolor sit amet, consectetur
                 A dolore, ipsum assumenda at 
                 Iure voluptate, quod inventore .</p>
-              <p class="precio">4.5$</p>
+              <p class="precio-1">4.5$</p>
             </div>
             <div class="hambur-menu">
               <h6 class="nombres-hambur">Bacoa</h6>
               <p class="contenido-hambur">Lorem ipsum dolor sit amet, consectetur
                 A dolore, ipsum assumenda at 
                 Iure voluptate, quod inventore .</p>
-              <p class="precio">4.8$</p>
+              <p class="precio-2">4.8$</p>
             </div>
             <div class="hambur-menu">
               <h6 class="nombres-hambur">Cervecera</h6>
               <p class="contenido-hambur">Lorem ipsum dolor sit amet, consectetur
                 A dolore, ipsum assumenda at 
                 Iure voluptate, quod inventore .</p>
-              <p class="precio">4.6$</p>
+              <p class="precio-3">4.6$</p>
             </div>
             <div class="hambur-menu">
               <h6 class="nombres-hambur">Cheeseburguer</h6>
               <p class="contenido-hambur">Lorem ipsum dolor sit amet, consectetur
                 A dolore, ipsum assumenda at 
                 Iure voluptate, quod inventore .</p>
-              <p class="precio">3.5$</p>
+              <p class="precio-4">3.5$</p>
             </div>
           </div>
         </div>
         <div class="linea-flotante"></div>
+      </div>
+            <!-- ENTRADAS / TEQUEÑOS, PAPAS Y MAS -->
+      <!-- ENTRADAS -->
+      <div class="contenido3">
+        <!-- BOTON ENTRADA -->
+        <div class="row botones-menu">
+          <div class="col">
+            <div class="btn btn-entradas">
+              <p class="titulo-entradas">ENTRADAS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CONTENIDO DEL BOTON -->
+      <div class="plegable3">
+        <div class="row contenido-plegable3">
+          <div class="col entradas-menu">
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col entradas-menu">
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+            <div class="cuadro-entradas">
+              <div class="entradas">
+                <h4>Rac.Papas Fritas</h4>
+                <h6>3.5$</h6>
+              </div>
+            </div>
+          </div>
+         </div>
+        <div class="linea-flotante3"></div>
       </div>
       <!-- CERVEZA -->
       <div class="contenido2">
@@ -129,16 +187,50 @@
         </div>
       </div>
       <!-- CONTENIDO DEL BOTON -->
-      <div class="row row-plegable2">
-        <div class="col contenido-plegable2">
-          <p class="texto-plegable2">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quos quam consectetur quidem similique dolorum 
-            blanditiis ratione, unde accusantium velit 
-            laudantium facere ut fuga, cumque obcaecati! 
-            Sapiente in sint impedit sequi.</p>
-        </div>
+      <div class="plegable2">
+        <div class="row contenido-plegable2">
+          <div class="col cervezas-menu">
+            <p class="precio-cerv">1.5$</p>
+            <p class="cerveza-titulo">Polar pilsen/Light</p>
+            <br>
+            <p class="precio-cerv">2$</p>
+            <p class="cerveza-titulo">Soleras</p>
+            <br>
+            <p class="precio-cerv">1.5$</p>
+            <p class="cerveza-titulo">Zulia/Morena</p>
+            <br>
+            <p class="precio-cerv">2$</p>
+            <p class="cerveza-titulo">Hohtland</p>
+            <br>
+            <p class="precio-cerv">2.5$</p>
+            <p class="cerveza-titulo">Estrella galicia</p>
+          </div>
+          <div class="col cervezas-menu">
+            <p class="precio-cerv">2.5$</p>
+            <p class="cerveza-titulo">1906</p>
+            <br>
+            <p class="precio-cerv">2.5$</p>
+            <p class="cerveza-titulo">Corona</p>
+            <br>
+            <p class="precio-cerv">2$</p>
+            <p class="cerveza-titulo">Heineken-Budweser</p>
+            <br>
+            <p class="precio-cerv">15$</p>
+            <p class="cerveza-titulo">Tobo Solera x12</p>
+            <br>
+            <p class="precio-cerv">10$</p>
+            <p class="cerveza-titulo">Tobo polar p/l x12</p>
+          </div>
+         </div>
+         <div class="row contenido-plegable2">
+          <div class="col cerveza-ext">
+            <p class="precio-cerv">10$</p>
+            <p class="cerveza-titulo">Tobo Zulia/More</p>
+          </div>
+         </div>
         <div class="linea-flotante2"></div>
       </div>
+
       <!-- PIE DE PAGINA -->
       <div class="row footter"></div>
     </div>
@@ -178,15 +270,21 @@
       });
       // BOTONES MENU HAMBURGUESA
       $('.btn-hambur').click(function(){
-        $('.btn-hambur').toggleClass("press");
-        $('.contenido-plegable1').toggleClass("ver");
-        $('.linea-flotante').toggleClass("move");
+        $('.btn-hambur').addClass("press");
+        $('.contenido-plegable1').addClass("ver");
+        $('.linea-flotante').addClass("move");
       });
       // BOTONES MENU CERVEZA
       $('.btn-cerveza').click(function(){
-        $('.btn-cerveza').toggleClass("press2");
-        $('.contenido-plegable2').toggleClass("ver2");
-        $('.linea-flotante2').toggleClass("move2");
+        $('.btn-cerveza').addClass("press2");
+        $('.contenido-plegable2').addClass("ver2");
+        $('.linea-flotante2').addClass("move2");
+      });
+      // BOTONES MENU ENTRADAS
+      $('.btn-entradas').click(function(){
+        $('.btn-entradas').addClass("press3");
+        $('.contenido-plegable3').addClass("ver3");
+        $('.linea-flotante3').addClass("move3");
       });
     </script>
   </body>

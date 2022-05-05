@@ -23,10 +23,6 @@
     src: url(../font/Montserrat-Black.otf) format('truetype');
 }
 @font-face {
-    font-family: 'Tiza';
-    src: url(../font/tiza.ttf) format('truetype');
-}
-@font-face {
     font-family: 'Tiza2';
     src: url(../font/HackneyPersonalUseOnly.ttf) format('truetype');
 }
@@ -48,11 +44,16 @@ body{
 .btn1{
     position: fixed;
     top: 15px;
-    right: 10px;
+    right: 13px;
     height: 45px;
     width: 45px;
     text-align: center;
     background: #1faefc;
+    box-shadow: 1px 1px 0px rgb(18, 75, 109),
+                2px 2px 0px rgb(18, 75, 109),
+                3px 3px 0px rgb(18, 75, 109),
+                4px 4px 0px rgb(18, 75, 109),
+                5px 5px 0px rgb(18, 75, 109);
     border-radius: 7px;
     cursor: pointer;
     transition: left 0.4s ease;
@@ -64,6 +65,14 @@ body{
     font-size: 28px;
     line-height: 45px;
 }
+
+.btn1.click {
+    top: 20px;
+    right: 10px;
+    box-shadow: 1px 1px 0px rgb(18, 75, 109),
+                2px 2px 0px rgb(18, 75, 109);
+}
+
 
 .btn1.click span:before{
     content: '\f00d';
@@ -154,8 +163,9 @@ nav ul li a:hover{
 /* CONTENIDO UNO PARA ESCONDER TEXTO */
 .contenido1{
     position: relative;
-    background-color: black;
-    z-index: 50;
+    background-color: #000000;
+    margin-bottom: 4px;
+    z-index: 51;
 }
 
 /* LINEA INICIAL  LOGO*/
@@ -256,6 +266,7 @@ nav ul li a:hover{
 }
 
 .contenido-plegable1.ver{
+    background-color: #000000;
     position: static;
     opacity: 1;
     margin-top: 10px;
@@ -271,13 +282,14 @@ nav ul li a:hover{
     width: 85%;
     margin: 0 7.5% 0 7.5%;
     background-color: white;
-    bottom: 410px;
+    bottom: 510px;
     transition: 1s linear;
     transition-delay: 1s;
+    z-index: 45;
 }
 
 .linea-flotante.move{
-    bottom: 10px;
+    bottom: 0px;
 }
 
 /* HAMBURGUESAS MENU */
@@ -286,7 +298,7 @@ nav ul li a:hover{
     font-family: "Montserrat Regular";
     font-size: 0.7rem;
     text-transform: uppercase;
-    border-bottom: 2px dashed white;
+    /* border-bottom: 2px dashed white; */
     margin-bottom: 10px;
 }
 .nombres-hambur{
@@ -297,14 +309,46 @@ nav ul li a:hover{
 .contenido-hambur{
     margin: 0%;
 }
-.precio{
-    font-family: "Montserrat SemiBold";
+.precio-1{
+    color: #000000;
+    background-color: #e97407;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "Montserrat Bold";
     font-size: 1rem;
-    margin: 0%;
+    margin: 0 15% 0 15% ;
 }
-
+.precio-2{
+    color: #000000;
+    background-color: #e7810d;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "Montserrat Bold";
+    font-size: 1rem;
+    margin: 0 15% 0 15% ;
+}
+.precio-3{
+    color: #000000;
+    background-color: #e4920f;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "Montserrat Bold";
+    font-size: 1rem;
+    margin: 0 15% 0 15% ;
+}
+.precio-4{
+    color: #000000;
+    background-color: #f1a81f;
+    width: 70%;
+    border-radius: 5px;
+    font-family: "Montserrat Bold";
+    font-size: 1rem;
+    margin: 0 15% 0 15% ;
+}
 /* CERVEZA */
 .contenido2{
+    margin-bottom: 5px;
+    background-color: #000000;
     position: relative;
     z-index: 50;
 }
@@ -313,10 +357,8 @@ nav ul li a:hover{
     margin-top: 15px;
     background-color: #1faefc;
     text-align: center;
-    font-family: "Tiza";
-    font-size: 1.4rem;
-    color: black;
     border-radius: 5px;
+    color: black;
     padding: 0%;
     width: 95%;
     box-shadow: 1px 1px 0px rgb(22, 99, 143),
@@ -329,62 +371,184 @@ nav ul li a:hover{
 /* TRANSFROMACION DE BOTON */
 .btn-cerveza.press2{
     color: white;
-    font-family: "Tiza";
-    font-size: 1.3rem;
     background-color: transparent;
     box-shadow: none;
-    padding: 0 0 3px 0;
     border-radius: 0%;
     border-top: 2px solid;
     border-bottom: 2px solid;
 }
 
 .titulo-cerveza{
-    padding: 0%;
+    font-family: "Tiza2";
+    font-size: 3.5rem;
+    line-height: 80%;
+    padding: 0 0 7px 0;
     margin: 0%;
 
 }
 /* CONTENIDO DEL BOTON CERVEZA */
-.row-plegable2{
+/* PROGRAMACION DEL PLIEGUE */
+.plegable2{
     position: relative;
 }
 
 .contenido-plegable2{
     position: absolute;
     margin-top: 0px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-family: "Montserrat Regular";
-    font-size: 1rem;
+    text-align: left;
+    color: white;
     opacity: 0;
     transition: opacity 1s linear;
-    transition-delay: 2s;
-    z-index: 40;
+    transition-delay: 2.5s;
+    z-index: 35;
 }
 
 .contenido-plegable2.ver2{
+    background-color: #000000;
     position: static;
     opacity: 1;
-    margin-top: 10px;
 }
-
-.texto-plegable2{
-    margin-bottom: 5px;
+/* CONTENIDO */
+.cerveza-titulo{
+    display: inline;
+    font-family:"Tiza2";
+    font-size: 5.2vw;
+    margin-bottom: 10px;
 }
-/* LINEA FLOTANTE CERVEZA */
+.precio-cerv{
+    color: black;
+    font-family: "Montserrat Bold";
+    font-size: 4vw;
+    background-color: #d88d12;
+    border-radius: 5px;
+    padding: 0 3px 0 3px;
+    display: inline;
+}
+.cerveza-ext{
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+/* LINEA FLOTANTE */
 .linea-flotante2{
     position: absolute;
-    top: -2px;
     height: 2px;
     width: 85%;
-    margin: 0 7.5% 0 7.5%;
-    background-color: white;
+    margin: 5px 7.5% 0 7.5%;
+    background-color: rgb(0, 0, 0);
+    bottom: 200px;
     transition: 1s linear;
     transition-delay: 1s;
+    z-index: 36;
 }
 
 .linea-flotante2.move2{
-    transform: translate(0px,185px);
+    background-color: rgb(255, 255, 255);
+    bottom: 0px;
+}
+/* ENTRADAS */
+.contenido3{
+    margin-bottom: 5px;
+    background-color: #000000;
+    position: relative;
+    z-index: 50;
+}
+/* BOTON CERVEZA */
+.btn-entradas{
+    margin-top: 15px;
+    background-color: #1faefc;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+    padding: 0%;
+    width: 95%;
+    box-shadow: 1px 1px 0px rgb(22, 99, 143),
+                2px 2px 0px rgb(22, 99, 143),
+                3px 3px 0px rgb(22, 99, 143),
+                4px 4px 0px rgb(22, 99, 143),
+                5px 5px 0px rgb(22, 99, 143);
+}
+
+/* TRANSFROMACION DE BOTON */
+.btn-entradas.press3{
+    color: white;
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0%;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+}
+
+.titulo-entradas{
+    font-family: "Tiza2";
+    font-size: 3.5rem;
+    line-height: 80%;
+    padding: 0 0 7px 0;
+    margin: 0%;
+
+}
+/* CONTENIDO DEL BOTON CERVEZA */
+/* PROGRAMACION DEL PLIEGUE */
+.plegable3{
+    position: relative;
+    z-index: 37;
+}
+
+.contenido-plegable3{
+    position: absolute;
+    margin-top: 10px;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s linear;
+    transition-delay: 2.5s;
+    z-index: 37;
+}
+
+.contenido-plegable3.ver3{
+    background-color: #000000;
+    position: static;
+    opacity: 1;
+}
+/* CONTENIDO */
+.cuadro-entradas{
+    border: dashed white;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.entradas{
+    color: black;
+    text-align: center;
+    background-color: #05bfc5;
+    border-radius: 5px;
+    margin: 4px;
+}
+.entradas h4{
+    font-family: "Tiza2";
+    margin-bottom: 0%;
+}
+.entradas h6{
+    font-family: "Montserrat Bold";
+    font-size: 3.9vw;
+    margin: 0%;
+}
+
+/* LINEA FLOTANTE */
+.linea-flotante3{
+    position: absolute;
+    height: 2px;
+    width: 85%;
+    margin: 5px 7.5% 0 7.5%;
+    background-color: rgb(0, 0, 0);
+    bottom: 200px;
+    transition: 1s linear;
+    transition-delay: 1s;
+    z-index: 36;
+}
+
+.linea-flotante3.move3{
+    background-color: rgb(255, 255, 255);
+    bottom: 0px;
 }
 /* PIE DE PAGINA */
 .footter{
